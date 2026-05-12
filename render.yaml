@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: wordpress-web
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: WP_ENV
+        value: production
