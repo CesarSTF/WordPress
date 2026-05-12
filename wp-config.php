@@ -89,7 +89,8 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+/** Forzar conexión SSL para la base de datos de Aiven */
+define( 'MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL );
 
 /* That's all, stop editing! Happy publishing. */
 
